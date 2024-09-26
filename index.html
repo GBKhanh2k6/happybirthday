@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #ffeb3b;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        .balloons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background: red;
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            margin: 0 10px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(2) {
+            background: yellow;
+            animation-delay: 0.5s;
+        }
+
+        .balloon:nth-child(3) {
+            background: blue;
+            animation-delay: 1s;
+        }
+
+        .balloon:before {
+            content: '';
+            width: 2px;
+            height: 30px;
+            background: #555;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chúc mừng sinh nhật</h1>
+        <h2>Đoàn Nguyễn Gia Thi</h2>
+        <p>Chúc em Min một ngày thật tuyệt vời và tràn đầy niềm vui!</p>
+
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </div>
+</body>
+
+</html>
